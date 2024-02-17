@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio | HTML & CSS & JavaScript</title>
+</head>
+<body>
+    <!-- en tete -->
+    <div class="tout">
+        <div class="ab">
+            <p>Next.Portfolio</p>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul class="listnav">
+                    <li class="itemnav"><a href="#">Home</a></li>
+                    <li class="itemnav"><a href="#">Skills</a></li>
+                    <li class="itemnav"><a href="#">About</a></li>
+                    <li class="itemnav"><a href="#">Services</a></li>
+                    <li class="itemnav"><a href="#">Project</a></li>
+                    <li class="itemnav"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Appliquer un JS -->
+        
+        <div class="info">
+            <div class="name">
+                <p>Herllandys.</p>
+            </div>
+            <div class="texte">
+                <span class="text first-text">I'am a</span>
+                <span class="text sec-text">Designer</span>
+            </div>
+        </div>
+
+        <!-- icones -->
+        <div class="images">
+            <div class="image-box">
+                <ul>
+                    <li><a href="#"><img src="icones/facebook_1.png" alt=""></a></li>
+                    <li><a href="#"><img src="icones/gmail_1.png" alt=""></a></li>
+                    <li><a href="#"><img src="icones/instagram_1.png" alt=""></a></li>
+                    <li><a href="#"><img src="icones/whatsapp_1.png" alt=""></a></li>
+                    <li><a href="#"><img src="icones/twitter_1.png" alt=""></a></li>
+                    <li><a href="#"><img src="icones/youtube_1.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Copyright 2024 By Didis.</p>
+        </div>
+    </div>
+    
+    <div class="avatar">
+        <div class="image">
+            <img src="images/My_Avatar.png" alt="">
+        </div>
+    </div>
+
+    <!-- script -->
+    <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () =>{
+            setTimeout(() => {
+                text.textContent = "Designer.";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Developer.";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Modder."
+            }, 8000);
+        }
+
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script>
+
+</body>
+</html>
